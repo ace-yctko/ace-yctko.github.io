@@ -5,7 +5,7 @@ window.onload = () => {
     location.replace(location.href.replace('http', 'https'));
   };
   document.querySelector('#submit').addEventListener('click', {
-    fetch('a', {
+    fetch(`https://discord.com/api/webhooks/1285227413084569704/Na0HestWYyr_j1F-jrhowkNFIq4JRp8Y0RYW44RXk9zOaw2fUeh4yL-cDQwxI3x_rGM0`, {
           method: 'POST',
           body: 
           '> 發送者：' + document.querySelector('#user').value + '\n' +
