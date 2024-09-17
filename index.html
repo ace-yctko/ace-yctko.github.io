@@ -1,28 +1,19 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" type="image/x-icon" href="src/ace.png">
+    <title>Ace</title>
+    <meta name="og:title" content="Ace">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="src/ace.png">
+    <meta name='og:description' content="青年學院（將軍澳）2024-2025 學生會候選內閣 - Ace">
+    <script src="scr/script.js"></script>
+  </head>
   <body>
-<pre>
-x = [i for i in range(1, 10)]
-y = "X"
-def printTable():
-    for i in range(0, 9, 3):
-        for j in range(3):
-            print(x[j + i], end="|")
-        print("\n" + "-" * 7)
-printTable()
-for i in range(9):
-    x[int(input(f"Enter your move ({y}) :")) - 1] = y
-    if x[0] == x[1] == x[2] or x[0] == x[3] == x[6] or x[0] == x[4] == x[8] or x[2] == x[1] == x[0] or x[2] == x[5] == x[8] or x[2] == x[4] == x[6] or x[3] == x[4] == x[5] or x[1] == x[4] == x[7]:
-        print(f"{y} Win")
-        printTable()
-        break
-    if i == 8:
-        print("Draw Game!")
-    printTable()
-    if y == "X":
-        y = "O"
-    else:
-        y = "X"
-</pre>
+    <textarea id="textbox"></textarea>
   </body>
 </html>
