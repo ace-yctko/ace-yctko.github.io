@@ -11,7 +11,10 @@ window.onload = () => {
             content: '> 發送者：' + document.querySelector('#user').value + '\n' +
             '> 發送原因：' + document.querySelector('#reason').value + '\n\n' + 
             document.querySelector('#textbox').value
-          })
+          }),
+          headers: {
+            'Content-Type': 'application/json'
+          }
     });
   });
 };
