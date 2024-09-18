@@ -11,7 +11,7 @@ window.onload = () => {
         body: JSON.stringify({
           content: '> 發送者：' + document.querySelector('#user').value + '\n' +
           '> 發送原因：' + document.querySelector('#reason').value + '\n\n' + 
-          document.querySelector('#textbox').value + '----------'
+          document.querySelector('#textbox').value + '\n----------'
         }),
         headers: {
           'Content-Type': 'application/json'
