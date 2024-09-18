@@ -16,7 +16,7 @@ window.onload = () => {
             'Content-Type': 'application/json'
           }
     })
-    .then(res => res.json())
-    .then(res => console.log(res.status))
+    .then(res => res.text())
+    .then(res => console.log(res))
   });
 };
