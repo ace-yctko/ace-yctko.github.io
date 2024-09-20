@@ -12,19 +12,30 @@
     <meta name="og:image" content="src/ace.png">
     <meta name='og:description' content="青年學院（將軍澳）2024-2025 學生會候選內閣 - Ace">
     <script src="src/script.js"></script>
+    <style rel="stylesheet" type="text/css" href="src/style.css"></style>
   </head>
   <body>
-    <label for="user">發送者：</label>
-    <input id="user" name="user" value="匿名">
-    <br>
-    <label for="reason">發送原因：</label>
-    <select id="reason" name="reason">
-      <option value="建議">建議</option>
-      <option value="反映">反映</option>
-    </select>
-    <br><br>
-    <textarea id="textbox" rows="10" cols="50" maxlength="2000"></textarea>
-    <br>
-    <input type="submit" id="submit">
+    <div class="links">
+      <a class="link" href="mailto:hcskaiask@gmail.com" target="_blank">
+          <div class="icon-mail" style="background-image: url('//upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg');"></div>
+          <span class="site">Email</span>
+      </a>
+    </div>
+    <div class="comment">
+      <p>
+        <label for="user">發送者：</label>
+        <input id="user" name="user" value="匿名">
+        <br>
+        <label for="reason">發送原因：</label>
+        <select id="reason" name="reason">
+          <option value="建議">建議</option>
+          <option value="反映">反映</option>
+        </select>
+      </p>
+      <p>
+        <textarea id="textbox" rows="10" cols="50" maxlength="2000"></textarea>
+      </p>
+      <input type="submit" id="submit">
+    </div>
   </body>
 </html>
