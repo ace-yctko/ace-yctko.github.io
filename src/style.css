@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
             
 html, body {
     margin: 0;
@@ -8,10 +8,12 @@ html, body {
     height: 100%;
     background-color: #0e0e0e;
     color: white;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;  
 }
 
-.links {
+.links, .comment {
     max-width: 550px;
     margin: 30px auto;
 }
