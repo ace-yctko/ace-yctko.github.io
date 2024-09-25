@@ -27,7 +27,7 @@ html, body {
 .name {
     font-size: 70px;
     font-family: "Montserrat", sans-serif;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 3px 3px 6px white;
     letter-spacing: 3px;
     text-align: center;
     margin: 5px auto;
