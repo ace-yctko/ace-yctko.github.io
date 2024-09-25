@@ -29,6 +29,7 @@ html, body {
     font-family: "Montserrat", sans-serif;
     text-shadow: 2px 2px 4px white;
     letter-spacing: 3px;
+    text-align: center;
     margin: 20px auto;
 }
 
