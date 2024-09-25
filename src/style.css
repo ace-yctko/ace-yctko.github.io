@@ -24,7 +24,7 @@ html, body {
 }
 
 .name {
-    font-size: large;
+    font-size: 200px;
     text-shadow: 2px 2px 4px white;
     letter-spacing: 3px;
     margin: 20px auto;
