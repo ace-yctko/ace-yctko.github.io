@@ -36,7 +36,7 @@ html, body {
     border: thin solid white;
 }
 
-.site, .content {
+.site {
     background: linear-gradient(135deg,
      rgba(39, 140, 235, 1) 16%,
      rgba(12, 209, 197, 1) 32%,
