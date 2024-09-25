@@ -13,8 +13,17 @@ html, body {
     font-style: normal;  
 }
 
+.icon {
+    background-image: url("/src/ace-white.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
 .links, .comment {
-    max-width: 550px;
+    max-width: 750px;
     margin: 30px auto;
 }
 
