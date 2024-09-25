@@ -18,9 +18,11 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     margin: 70px auto;
+    border: thin solid white;
+    border-radius: 70%;
 }
 
 .links, .comment {
