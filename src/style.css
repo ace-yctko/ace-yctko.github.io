@@ -95,6 +95,8 @@ html, body {
 
 .content {
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes gradient {
