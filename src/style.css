@@ -14,7 +14,7 @@ html, body {
 }
 
 .icon {
-    background-image: url("/src/ace-white.png");
+    background-image: url("src/ace-white.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
