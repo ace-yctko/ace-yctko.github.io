@@ -21,8 +21,6 @@ html, body {
     width: 180px;
     height: 180px;
     margin: 70px auto;
-    border: thin solid white;
-    border-radius: 70%;
 }
 
 .links, .comment {
