@@ -21,13 +21,13 @@ html, body {
     background-position: center;
     width: 180px;
     height: 180px;
-    margin: 70px auto;
+    margin: 70px auto 10px;
 }
 
 .name {
     font-size: 45px;
     font-family: "Montserrat", sans-serif;
-    text-shadow: 3px 3px 6px white;
+    text-shadow: 3px 3px 5px white;
     letter-spacing: 3px;
     text-align: center;
 }
