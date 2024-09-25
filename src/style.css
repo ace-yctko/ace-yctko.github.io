@@ -27,6 +27,7 @@ html, body {
     font-size: large;
     text-shadow: 2px 2px 4px white;
     letter-spacing: 3px;
+    margin: 20px auto;
 }
 
 .links, .comment {
