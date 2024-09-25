@@ -64,7 +64,7 @@ html, body {
     grid-gap: 15px;
     margin: 17px;
     transition: all ease 0.2s;
-    height: 50px;
+    height: 45px;
 }
 
 .link:hover {
