@@ -26,6 +26,7 @@ html, body {
 .name {
     font-size: large;
     text-shadow: 2px 2px 4px white;
+    letter-spacing: 3px;
 }
 
 .links, .comment {
