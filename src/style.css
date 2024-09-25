@@ -14,12 +14,13 @@ html, body {
 }
 
 .icon {
-    background-image: url("src/ace-white.png");
+    background-image: url("ace-white.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 300px;
     height: 300px;
+    margin: 70px auto;
 }
 
 .links, .comment {
