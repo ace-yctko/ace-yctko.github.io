@@ -33,7 +33,7 @@ html, body {
 }
 
 .icons {
-    margin: 0 auto;
+    margin-left: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -99,6 +99,7 @@ html, body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 @keyframes gradient {
