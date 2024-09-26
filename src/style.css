@@ -23,6 +23,7 @@ html, body {
 
 .name {
     font-size: 42px;
+    font-weight: 380;
     font-family: "Montserrat", sans-serif;
     text-shadow: 0 0 13px white;
     letter-spacing: 8px;
@@ -63,7 +64,8 @@ html, body {
     grid-gap: 15px;
     margin: 17px;
     transition: all ease 0.2s;
-    height: 45px;
+    height: auto;
+    min-height: 45px;
     font-family: "Klee One", cursive;
     font-weight: 600;
     font-style: normal;
