@@ -47,6 +47,10 @@ html, body {
     margin-left: 20px;
 }
 
+.icon:hover {
+    transform: scale(1.15);
+}
+
 .links {
     max-width: 750px;
     width: 85%;
