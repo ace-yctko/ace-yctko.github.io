@@ -51,6 +51,7 @@ html, body {
 
 .links {
     max-width: 750px;
+    width: 80%;
     margin: 30px auto;
 }
 
