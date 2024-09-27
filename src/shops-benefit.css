@@ -8,8 +8,11 @@ html, body {
     color: white;
 }
 
-.iframe {
+.physical {
     margin: 30px auto;
+}
+
+。iframe {
     width: 640px;
     height: 480px;
 }
