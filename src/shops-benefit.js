@@ -2,7 +2,7 @@
 
 let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     title = 'shops benefit',
-    range = 'A1:I138';
+    range = 'A:I';
 
 let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
 
