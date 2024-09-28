@@ -8,12 +8,17 @@ html, body {
     color: white;
 }
 
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.map {
+    width: 80vw;
+    height: 50vh;
+}
+
 .physical {
     margin: 30px auto;
     text-align: center;
-}
-
-.iframe {
-    width: 80vw;
-    height: 50vh;
 }
