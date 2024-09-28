@@ -10,7 +10,7 @@ window.onload = () => {
     fetch(url)
     .then(res => res.text())
     .then(rep => {
-        let data = JSON.parse(rep.substr(47).clice(0, -2));
-        console.log(res);
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        console.log(data);
     });
 };
