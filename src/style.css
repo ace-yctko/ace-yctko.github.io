@@ -12,7 +12,7 @@ html, body {
 }
 
 .pfp {
-    background-image: url("ace-white.png");
+    background-image: url("ace.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
