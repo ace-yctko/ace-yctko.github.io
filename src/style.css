@@ -51,10 +51,6 @@ html, body {
     transform: scale(1.08);
 }
 
-.icon-svg {
-    fill: white;
-}
-
 .links {
     max-width: 750px;
     width: 85%;
