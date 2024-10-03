@@ -2,7 +2,7 @@
 
 const list = (title) => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
-    range = 'B:I'; 
+    range = 'A2:I'; 
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
 
@@ -14,6 +14,15 @@ const list = (title) => {
     });
 };
 
+const titles = [
+    '食肆/食品零售',
+    '文具/教育',
+    '服飾',
+    '精品',
+    '娛樂',
+    '其他'
+];
+
 window.onload = () => {
-    console.log(list('食肆/食品零售'));
+    console.log(list(titles[0]));
 };
