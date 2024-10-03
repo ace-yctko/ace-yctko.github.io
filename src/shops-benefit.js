@@ -11,6 +11,7 @@ const list = (title) => {
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2));
         return data;
+        console.log(data);
     });
 };
 
