@@ -6,12 +6,11 @@ const list = (title) => {
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
 
-    fetch(url)
+    return fetch(url)
     .then(res => res.text())
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2));
         return data;
-        console.log(data);
     });
 };
 
