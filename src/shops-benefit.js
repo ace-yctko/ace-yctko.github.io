@@ -2,7 +2,7 @@
 
 const list = (title) => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
-    range = 'A:I'; 
+    range = 'B:I'; 
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
 
@@ -10,7 +10,7 @@ const list = (title) => {
     .then(res => res.text())
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2));
-        return data;
+        return data.table.rows;
     });
 };
 
