@@ -2,7 +2,7 @@
 
 const list = (title) => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
-    range = 'A2:I'; 
+    range = 'A3:I'; 
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
 
