@@ -28,6 +28,9 @@ table {
     margin: 30px auto;
     border-collapse: collapse;
     font-size: 15px;
+}
+
+pre {
     overflow: auto;
 }
 
