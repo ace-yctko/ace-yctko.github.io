@@ -14,12 +14,12 @@ const online_list = (title) => {
 
         for (let i in data) {
             if (data[i].c[0].v == '❌'|| data[i].c[4].v == 'N/A') continue;
-            let temp2 = '<tr>';
+            let temp2 = '';
             for (let j in data[i].c) {
                 if (j == 0) continue;
-                temp2 += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>'';
+                temp2 += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
             };
-            temp += temp2 + '</tr>';
+            temp += '<tr>' + temp2 + '</tr>';
         };
         document.querySelector('.online_shop').innerHTML = temp;
     });
