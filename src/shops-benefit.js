@@ -13,9 +13,11 @@ const online_list = (title) => {
         temp = new Array();
 
         for (let i in data) {
+            let temp2 = new Array();
             for (let j in data[i].c) {
-                temp += data[i].c[j].v + ' | ';
+                temp2.push(data[i].c[j].v + ' | ');
             };
+            temp.push(temp2.join(' | '));
         };
         document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
