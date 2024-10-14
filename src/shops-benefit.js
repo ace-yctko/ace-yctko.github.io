@@ -18,12 +18,13 @@ const online_list = (title) => {
             if (data[i].c[0].v == '❌') continue;
             let temp = '<tr>';
             for (let j in data[i].c) {
-                if (j < 5 && j != 2) continue;
                 if (j == 2) {
                     if ((data[i].c[3].v).indexOf('IG') != -1) {
                         temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
                         //temp += '<td>' + `<a href="https://instagram.com/${data[i].c[j]?.v}">${data[i].c[j]?.v}</a>` + '</td>';
                     };
+                } else if (j < 5) {
+                    continue;
                 } else {
                     temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
                 };
