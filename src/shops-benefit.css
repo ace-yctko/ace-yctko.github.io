@@ -19,7 +19,7 @@ html, body {
     height: 50vh;
 }
 
-.physical, .online {
+.physical, .online, .online_shop {
     margin: 30px auto;
     text-align: center;
 }
