@@ -25,6 +25,12 @@ html, body {
     text-align: center;
 }
 
+table {
+    max-width: 750px;
+    width: 85%;
+    border-collapse: collapse;
+}
+
 th, td {
     border: 1px solid grey;
     text-align: left;
