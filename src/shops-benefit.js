@@ -21,7 +21,8 @@ const online_list = (title) => {
                 if (j == 0 || j == 3 || j == 4) continue;
                 if (j == 2) {
                     if ((data[i].c[3].v).indexOf('IG') != -1) {
-                        temp += '<td>' + `<a href="https://instagram.com/${data[i].c[j]?.v}">${data[i].c[j]?.v}</a>` + '</td>';
+                        temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
+                        //temp += '<td>' + `<a href="https://instagram.com/${data[i].c[j]?.v}">${data[i].c[j]?.v}</a>` + '</td>';
                     };
                 } else {
                     temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
