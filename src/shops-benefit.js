@@ -9,19 +9,19 @@ const online_list = (title) => {
     return fetch(url)
     .then(res => res.text())
     .then(rep => {
-        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
-        temp = '';
+        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
         for (let i in data) {
             if (data[i].c[0].v == '❌'|| data[i].c[4].v == 'N/A') continue;
-            let temp2 = '';
+            let temp = '';
             for (let j in data[i].c) {
                 if (j == 0) continue;
-                temp2 += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
+                temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
             };
-            temp += '<tr>' + temp2 + '</tr>';
+            let node = document.createElement('tr');
+            node.appendChild(document.createTextNode(temp));
+            document.querySelector('.online_shop_list').appendChild(node);
         };
-        document.querySelector('.online_shop').innerHTML = temp;
     });
 };
 
