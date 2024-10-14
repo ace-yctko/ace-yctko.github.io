@@ -9,7 +9,8 @@ const list = (title) => {
     return fetch(url)
     .then(res => res.text())
     .then(rep => {
-        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
+        temp = '';
         
         for (let i in data) {
             if (data[i].c[0].v == '❌') continue;
