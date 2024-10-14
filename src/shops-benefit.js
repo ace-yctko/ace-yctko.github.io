@@ -19,7 +19,7 @@ const online_list = (title) => {
                 temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
             };
             let list = document.querySelector('.online_shop_list').innerHTML;
-            list += temp + '</tr>'
+            list = list + temp + '</tr>'
         };
     });
 };
