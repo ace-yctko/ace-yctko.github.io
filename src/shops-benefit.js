@@ -15,15 +15,6 @@ const online_list = (title) => {
     });
 };
 
-const titles = [
-    '食肆/食品零售',
-    '文具/教育',
-    '服飾',
-    '精品',
-    '娛樂',
-    '其他'
-];
-
 window.onload = () => {
-    online_list(titles[0]);
+    online_list(document.querySelector('#type > option').value);
 };
