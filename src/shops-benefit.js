@@ -5,8 +5,8 @@ const list = (title) => {
     range = 'A3:H'; 
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
-
-    return fetch(url)
+    
+    fetch(url)
     .then(res => res.text())
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
@@ -24,7 +24,6 @@ const list = (title) => {
                 };
             };
             temp += '</tr>';
-            
             document.querySelector('.shops').innerHTML = temp;
         };
     });
