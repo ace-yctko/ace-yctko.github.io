@@ -32,9 +32,11 @@ const list = (title) => {
 };
 
 window.onload = () => {
-    document.querySelectorAll('option').forEach(x => {
-        x.innerHTML = x.target.id;
-        x.value = x.target.id;
-    });
+    let options = document.querySelectorAll('option');
+    for (let i in options) {
+        let id = options[i].target.id;
+        options[i].innerHTML = id;
+        options[i].value = id;
+    };
     list(localStorage.type || document.querySelector('#type > option').value);
 };
