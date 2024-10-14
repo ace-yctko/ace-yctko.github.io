@@ -13,7 +13,7 @@ const online_list = (title) => {
         temp = new Array();
 
         for (let i = 0 ; i < data.length ; i ++) {
-            temp.push(data[i].c);
+            temp.push(JSON.stringify(data[i].c));
         };
         document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
