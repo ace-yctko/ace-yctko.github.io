@@ -15,7 +15,7 @@ const online_list = (title) => {
         for (let i in data) {
             let temp2 = new Array();
             for (let j in data[i].c) {
-                temp2.push(data[i].c[j].v || 'N/A');
+                temp2.push(data[i].c[j]?.v || 'N/A');
             };
             temp.push(temp2.join(' | '));
         };
