@@ -1,6 +1,6 @@
 'use strict';
 
-const list = (title) => {
+const online_list = (title) => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:I'; 
 
@@ -9,8 +9,9 @@ const list = (title) => {
     return fetch(url)
     .then(res => res.text())
     .then(rep => {
-        let data = JSON.parse(rep.substr(47).slice(0, -2));
-        return data.table.rows;
+        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+
+        document.querySelector('.online_shop').innerHTML = data;
     });
 };
 
@@ -24,5 +25,5 @@ const titles = [
 ];
 
 window.onload = () => {
-    console.log(list(titles[0]));
+    online_list(titles[0]);
 };
