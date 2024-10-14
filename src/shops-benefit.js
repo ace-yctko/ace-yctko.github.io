@@ -23,12 +23,12 @@ const list = (title) => {
                 };
             };
             if (temp.length > 0) document.querySelector('.shops').innerHTML =
-            document.querySelector('.shop').innerHTML + '<tr>' + temp + '</tr>';
+            document.querySelector('.shops').innerHTML + '<tr>' + temp + '</tr>';
         };
     });
     localStorage.type = title;
 };
 
 window.onload = () => {
-    list(localStorage.type ? localStorage.type : document.querySelector('#type > option').value);
+    list(localStorage.type || document.querySelector('#type > option').value);
 };
