@@ -26,7 +26,6 @@ table {
     width: 85vw;
     margin: 30px auto;
     border-collapse: collapse;
-    font-size: 15px;
 }
 
 pre {
@@ -34,7 +33,7 @@ pre {
 }
 
 th {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -42,6 +41,7 @@ th, td {
     border: 1px solid grey;
     text-align: left;
     padding: 10px;
+    font-size: 15px;
 }
 
 td > a {
