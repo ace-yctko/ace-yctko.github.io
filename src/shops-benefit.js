@@ -9,9 +9,14 @@ const online_list = (title) => {
     return fetch(url)
     .then(res => res.text())
     .then(rep => {
-        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+        let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
+        temp = new Array();
 
-        document.querySelector('.online_shop').innerHTML = JSON.stringify(data);
+        for (let i ; i < data.length ; i ++) {
+            temp.push(data[i].c)
+        };
+
+        document.querySelector('.online_shop').innerHTML = temp.join('\n');
     });
 };
 
