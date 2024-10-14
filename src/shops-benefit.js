@@ -20,9 +20,10 @@ const list = (title) => {
                     temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
                     //temp += '<td>' + `<a href="https://instagram.com/${data[i].c[j]?.v}">${data[i].c[j]?.v}</a>` + '</td>';
                 } else {
-                    temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td></tr>';
+                    temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
                 };
             };
+            temp += '</tr>';
             
             document.querySelector('.shops').innerHTML = temp;
         };
