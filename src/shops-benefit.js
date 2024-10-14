@@ -12,13 +12,13 @@ const online_list = (title) => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
         document.querySelector('.online_shop').innerHTML =
-        '<tr><th>獨家</th><th>IG/店舖名</th><th>福利</th><th>適用時段</th><th>備注</th></tr>';
+        '<tr><th>IG/店舖名</th><th>福利</th><th>適用時段</th><th>備注</th></tr>';
 
         for (let i in data) {
-            if (data[i].c[0].v == '❌'|| data[i].c[4].v != 'N/A') continue;
+            if (data[i].c[0].v == '❌') continue;
             let temp = '<tr>';
             for (let j in data[i].c) {
-                if (j == 0 || j == 3 || j == 4) continue;
+                if (j < 5 && j != 2) continue;
                 if (j == 2) {
                     if ((data[i].c[3].v).indexOf('IG') != -1) {
                         temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
