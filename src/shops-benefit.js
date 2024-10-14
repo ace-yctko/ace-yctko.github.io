@@ -16,7 +16,7 @@ const online_list = (title) => {
             temp.push(data[i].c);
         };
 
-        document.querySelector('.online_shop').innerHTML = temp.join('\n');
+        document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
 };
 
