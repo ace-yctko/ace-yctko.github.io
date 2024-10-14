@@ -16,7 +16,7 @@ const online_list = (title) => {
 
         for (let i in data) {
             if (data[i].c[0].v == '❌') continue;
-            let temp = '<tr>';
+            let temp = '';
             for (let j in data[i].c) {
                 if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                     temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
@@ -25,8 +25,8 @@ const online_list = (title) => {
                     temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
                 };
             };
-            document.querySelector('.online_shop').innerHTML =
-            document.querySelector('.online_shop').innerHTML + temp + '</tr>';
+            if (temp.length > 0) document.querySelector('.online_shop').innerHTML =
+            document.querySelector('.online_shop').innerHTML + '<tr>' + temp + '</tr>';
         };
     });
 };
