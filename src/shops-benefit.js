@@ -18,8 +18,8 @@ const online_list = (title) => {
                 if (j == 0) continue;
                 temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
             };
-            let list = document.querySelector('.online_shop_list').innerHTML;
-            list = list + temp + '</tr>'
+            document.querySelector('.online_shop_list').innerHTML =
+            document.querySelector('.online_shop_list').innerHTML + temp + '</tr>';
         };
     });
 };
