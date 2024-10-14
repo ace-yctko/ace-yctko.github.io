@@ -16,6 +16,8 @@ const online_list = (title) => {
             temp.push(data[i].c);
         };
 
+        console.log(data)
+        console.log(data.length)
         document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
 };
