@@ -11,7 +11,7 @@ const online_list = (title) => {
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
-        document.querySelector('.online_shop').innerHTML = JSON.strinfigy(data);
+        document.querySelector('.online_shop').innerHTML = JSON.stringify(data);
     });
 };
 
