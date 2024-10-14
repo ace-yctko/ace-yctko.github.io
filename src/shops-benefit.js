@@ -13,14 +13,13 @@ const online_list = (title) => {
 
         for (let i in data) {
             if (data[i].c[0].v == '❌'|| data[i].c[4].v == 'N/A') continue;
-            let temp = '';
+            let temp = '<tr>';
             for (let j in data[i].c) {
                 if (j == 0) continue;
                 temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
             };
-            let node = document.createElement('tr');
-            node.appendChild(document.createTextNode(temp));
-            document.querySelector('.online_shop_list').appendChild(node);
+            let list = document.querySelector('.online_shop_list').innerHTML;
+            list += temp + '</tr>'
         };
     });
 };
