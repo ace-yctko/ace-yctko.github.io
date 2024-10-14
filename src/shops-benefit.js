@@ -30,5 +30,5 @@ const list = (title) => {
 };
 
 window.onload = () => {
-    list(localStorage.type || document.querySelector('#type > option').value);
+    list(localStorage.type ? localStorage.type : document.querySelector('#type > option').value);
 };
