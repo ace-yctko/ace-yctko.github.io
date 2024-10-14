@@ -10,18 +10,18 @@ const online_list = (title) => {
     .then(res => res.text())
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
-        temp = new Array();
+        temp = '';
 
         for (let i in data) {
             if (data[i].c[0].v == '❌'|| data[i].c[4].v == 'N/A') continue;
-            let temp2 = new Array();
+            let temp2 = '<tr>';
             for (let j in data[i].c) {
                 if (j == 0) continue;
-                temp2.push(data[i].c[j]?.v || 'N/A');
+                temp2 += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>'';
             };
-            temp.push(temp2.join(' | '));
+            temp += temp2 + '</tr>';
         };
-        document.querySelector('.online_shop').innerHTML = temp.join('<br>');
+        document.querySelector('.online_shop').innerHTML = temp;
     });
 };
 
