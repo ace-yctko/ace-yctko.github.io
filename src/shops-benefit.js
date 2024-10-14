@@ -13,8 +13,10 @@ const online_list = (title) => {
         temp = new Array();
 
         for (let i in data) {
+            if (data[i].c[0] == '❌'|| data[i].c[4] == 'N/A') continue;
             let temp2 = new Array();
             for (let j in data[i].c) {
+                if (j == 0) continue;
                 temp2.push(data[i].c[j]?.v || 'N/A');
             };
             temp.push(temp2.join(' | '));
