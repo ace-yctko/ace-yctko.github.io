@@ -1,6 +1,6 @@
 'use strict';
 
-const online_list = (title) => {
+const list = (title) => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:H'; 
 
@@ -26,8 +26,9 @@ const online_list = (title) => {
             document.querySelector('.shop').innerHTML + '<tr>' + temp + '</tr>';
         };
     });
+    localStorage.type = title;
 };
 
 window.onload = () => {
-    online_list(document.querySelector('#type > option').value);
+    list(localStorage.type || document.querySelector('#type > option').value);
 };
