@@ -13,11 +13,8 @@ const online_list = (title) => {
         temp = new Array();
 
         for (let i ; i < data.length ; i ++) {
-            temp.push(data[i].c);
+            temp.push(JSON.stringify(data[i].c));
         };
-
-        console.log(data)
-        console.log(data.length)
         document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
 };
