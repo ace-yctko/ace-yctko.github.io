@@ -33,6 +33,11 @@ pre {
     overflow: auto;
 }
 
+th {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 th, td {
     border: 1px solid grey;
     text-align: left;
