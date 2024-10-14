@@ -6,6 +6,7 @@ const list = (title) => {
 
     let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
     
+    document.querySelector(`#${title}`).selected = true;
     fetch(url)
     .then(res => res.text())
     .then(rep => {
@@ -31,5 +32,9 @@ const list = (title) => {
 };
 
 window.onload = () => {
+    document.querySelectorAll('option').forEach(x => {
+        x.innerHTML = x.target.id;
+        x.value = x.target.id;
+    });
     list(localStorage.type || document.querySelector('#type > option').value);
 };
