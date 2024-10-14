@@ -22,8 +22,8 @@ const online_list = (title) => {
                     temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
                 };
             };
-            if (temp.length > 0) document.querySelector('.online_shop').innerHTML =
-            document.querySelector('.online_shop').innerHTML + '<tr>' + temp + '</tr>';
+            if (temp.length > 0) document.querySelector('.shops').innerHTML =
+            document.querySelector('.shop').innerHTML + '<tr>' + temp + '</tr>';
         };
     });
 };
