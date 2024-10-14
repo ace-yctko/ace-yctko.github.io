@@ -12,8 +12,10 @@ const online_list = (title) => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
         temp = new Array();
 
-        for (let i = 0 ; i < data.length ; i ++) {
-            temp.push(JSON.stringify(data[i].c));
+        for (let i in data) {
+            for (let j in data[i].c) {
+                temp += data[i].c[j].v + ' | ';
+            };
         };
         document.querySelector('.online_shop').innerHTML = temp.join('<br>');
     });
