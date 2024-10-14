@@ -10,10 +10,7 @@ const online_list = (title) => {
     .then(res => res.text())
     .then(rep => {
         let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
-
-        document.querySelector('.online_shop').innerHTML =
-        '<tr><th>店舖</th><th>福利</th><th>適用時段</th><th>備注</th></tr>';
-
+        
         for (let i in data) {
             if (data[i].c[0].v == '❌') continue;
             let temp = '';
