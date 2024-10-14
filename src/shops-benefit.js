@@ -34,7 +34,7 @@ const list = (title) => {
 window.onload = () => {
     let options = document.querySelectorAll('option');
     for (let i in options) {
-        let id = options[i].target.id;
+        let id = options[i].id;
         options[i].innerHTML = id;
         options[i].value = id;
     };
