@@ -24,12 +24,12 @@ hr {
 
 table {
     width: 85vw;
-    margin: 30px auto;
     border-collapse: collapse;
 }
 
 pre {
     overflow: auto;
+    margin-top: 30px;
 }
 
 th {
