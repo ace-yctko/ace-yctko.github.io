@@ -28,8 +28,10 @@ label {
 
 select {
     font-size: 18px;
-    padding: 5px;
-    width: 50px;
+    padding: 3px;
+    border: none;
+    background-color: none;
+    text-decoration: underline white;
 }
 
 pre {
