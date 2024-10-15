@@ -29,10 +29,7 @@ select {
     background: #0e0e0e;
     color: white;
     text-decoration: underline grey solid 2px;
-}
-
-select:hover {
-    border: none;
+    outline: none;
 }
 
 pre {
