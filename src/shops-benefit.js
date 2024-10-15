@@ -29,10 +29,13 @@ const list = () => {
         });
     });
 },
-    filter = title => {
+    filter = (title, prev) => {
         document.querySelector(`#${title}`).selected = true;
         document.getElementsByClassName(title).forEach(x => {
             x.style.display = 'initial';
+        });
+        document.getElementsByClassName(prev).forEach(x => {
+            x.style.display = 'none';
         });
     };
 
