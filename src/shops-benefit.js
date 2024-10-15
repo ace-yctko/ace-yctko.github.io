@@ -31,7 +31,6 @@ const list = () => {
 },
     filter = title => {
         document.querySelector(`#${title}`).selected = true;
-        localStorage.type = title;
     };
 
 window.onload = () => {
@@ -39,5 +38,7 @@ window.onload = () => {
         x.innerHTML = x.id;
         x.value = x.id;
     });
-    list(localStorage.type || document.querySelector('#type > option').id);
+
+    list();
+    filter(localStorage.type || document.querySelector('#type > option').id);
 };
