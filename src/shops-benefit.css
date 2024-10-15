@@ -31,6 +31,10 @@ select {
     text-decoration: underline grey solid 2px;
 }
 
+select:hover {
+    border: none;
+}
+
 pre {
     overflow: auto;
     margin-bottom: 30px;
