@@ -6,10 +6,10 @@ const list = () => {
 
     let temp = '';
 
-    document.querySelectorAll('#type > option').forEach(async title => {
+    document.querySelectorAll('#type > option').forEach(title => {
         let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
 
-        await fetch(url)
+        fetch(url)
         .then(res => res.text())
         .then(rep => {
             let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
@@ -27,8 +27,8 @@ const list = () => {
                 temp += '</tr>';
             };
         });
+        document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
     });
-    document.querySelector('.shops').innerHTML = temp;
 },
     filter = title => {
         document.querySelector(`#${title}`).selected = true;
