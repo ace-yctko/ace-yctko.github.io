@@ -30,7 +30,6 @@ const list = () => {
     });
 },
     filter = (title, prev) => {
-        document.querySelector(`#${title}`).selected = true;
         document.querySelectorAll(`.${title}`).forEach(x => {
             x.style.display = 'initial';
         });
@@ -44,7 +43,8 @@ window.onload = () => {
         x.innerHTML = x.id;
         x.value = x.id;
     });
-
     list();
-    filter(localStorage.type || document.querySelector('#type > option').id);
+    let type = localStorage.type || document.querySelector('#type > option').id;
+    filter(type);
+    document.querySelector(`#${type}`).selected = true;
 };
