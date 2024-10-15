@@ -31,7 +31,7 @@ const list = () => {
 },
     filter = (title, prev) => {
         document.querySelectorAll(`.${title}`).forEach(x => {
-            x.style.display = 'block';
+            x.style.display = 'unset';
         });
         if (prev) document.querySelectorAll(`.${prev}`).forEach(x => {
             x.style.display = 'none';
