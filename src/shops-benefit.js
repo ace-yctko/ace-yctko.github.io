@@ -1,7 +1,7 @@
 'use strict';
 
 const list = () => {
-    let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
+    const id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:H'; 
 
     document.querySelectorAll('#type > option').forEach(title => {
@@ -10,8 +10,7 @@ const list = () => {
         fetch(url)
         .then(res => res.text())
         .then(rep => {
-            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
-            temp = '';
+            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
