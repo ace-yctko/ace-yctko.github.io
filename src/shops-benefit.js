@@ -5,13 +5,13 @@ const list = () => {
     range = 'A3:H'; 
 
     document.querySelectorAll('#type > option').forEach(title => {
-        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
+        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range,
+        temp = '';
 
         fetch(url)
         .then(res => res.text())
         .then(rep => {
-            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
-                temp = '';
+            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
@@ -25,8 +25,8 @@ const list = () => {
                 };
                 temp += '</tr>';
             };
-            document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
         });
+        document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
     });
 },
     filter = title => {
