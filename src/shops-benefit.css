@@ -24,8 +24,9 @@ hr {
 
 select {
     font-size: 30px;
-    padding: 3px;    border: none;
-    background: none;
+    padding: 3px;
+    border: none;
+    background: #0e0e0e;
     color: white;
     text-decoration: underline grey solid 2px;
 }
