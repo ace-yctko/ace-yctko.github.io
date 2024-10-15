@@ -4,10 +4,9 @@ const list = () => {
     const id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:H'; 
 
-    let temp = '';
-
     document.querySelectorAll('#type > option').forEach(title => {
-        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
+        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range,
+            temp = '';
 
         fetch(url)
         .then(res => res.text())
