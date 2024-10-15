@@ -5,7 +5,7 @@ const list = () => {
     range = 'A3:H'; 
 
     document.querySelectorAll('#type > option').forEach(title => {
-        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title + '&range=' + range;
+        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
 
         fetch(url)
         .then(res => res.text())
@@ -15,7 +15,7 @@ const list = () => {
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
-                temp += `<tr class="${title} disable">`;
+                temp += `<tr class="${title.id} disable">`;
                 for (let j in data[i].c) {
                     if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                         temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
