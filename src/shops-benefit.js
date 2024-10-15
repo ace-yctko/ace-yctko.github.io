@@ -26,8 +26,8 @@ const list = () => {
                 };
                 temp += '</tr>';
             };
+            document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
         });
-        document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
     });
 },
     filter = title => {
