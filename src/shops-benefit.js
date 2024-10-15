@@ -34,7 +34,6 @@ const list = (title) => {
 window.onload = () => {
     document.querySelectorAll('option').forEach(x => {
         x.innerHTML = x.id;
-        x.value = x.id;
     });
     list(localStorage.type || document.querySelector('#type > option').value);
 };
