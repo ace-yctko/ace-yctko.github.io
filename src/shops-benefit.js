@@ -5,13 +5,13 @@ const list = () => {
     range = 'A3:H'; 
 
     document.querySelectorAll('#type > option').forEach(title => {
-        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range,
-            temp = '';
+        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
 
         fetch(url)
         .then(res => res.text())
         .then(rep => {
-            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
+                temp = '';
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
