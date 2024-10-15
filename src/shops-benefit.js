@@ -4,14 +4,14 @@ const list = () => {
     const id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:H'; 
 
-    document.querySelectorAll('#type > option').forEach(async title => {
-        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range,
-        temp = '';
+    document.querySelectorAll('#type > option').forEach(title => {
+        let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
 
-        await fetch(url)
+        fetch(url)
         .then(res => res.text())
         .then(rep => {
-            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
+                temp = '';
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
@@ -25,8 +25,8 @@ const list = () => {
                 };
                 temp += '</tr>';
             };
+            document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
         });
-        await document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
     });
 },
     filter = title => {
