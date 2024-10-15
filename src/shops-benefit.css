@@ -23,7 +23,7 @@ hr {
 }
 
 select {
-    font-size: 30px;
+    font-size: 25px;
     padding: 3px;
     border: none;
     background: #0e0e0e;
@@ -42,15 +42,10 @@ table {
     margin: 0 auto;
 }
 
-th {
-    font-size: 30px;
-    font-weight: bold;
-}
-
 th, td {
     border: 1px solid grey;
     text-align: left;
     vertical-align: middle;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
