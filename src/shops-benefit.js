@@ -5,8 +5,8 @@ const list = () => {
     range = 'A3:H'; 
 
     let temp = '';
-    
-    document.querySelectorAll('#type > option').forEach(title => {
+
+    document.querySelectorAll('#type > option').forEach(async title => {
         let url = 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range;
 
         fetch(url)
@@ -14,7 +14,7 @@ const list = () => {
         .then(rep => {
             let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
 
-            for (let i in data) {
+            for await (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
                 temp += `<tr class="${title.id} disable">`;
                 for (let j in data[i].c) {
