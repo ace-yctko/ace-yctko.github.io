@@ -1,6 +1,6 @@
 'use strict';
 
-const list = (title) => {
+const list = title => {
     let id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
     range = 'A3:H'; 
 
