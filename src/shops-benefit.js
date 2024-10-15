@@ -33,7 +33,7 @@ const list = () => {
         document.querySelectorAll(`.${title}`).forEach(x => {
             x.style.opacity = '1';
         });
-        document.querySelectorAll(`.${prev}`).forEach(x => {
+        if (prev) document.querySelectorAll(`.${prev}`).forEach(x => {
             x.style.opacity = '0';
         });
     };
