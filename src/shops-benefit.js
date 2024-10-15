@@ -35,5 +35,5 @@ window.onload = () => {
     document.querySelectorAll('option').forEach(x => {
         x.innerHTML = x.id;
     });
-    list(localStorage.type || document.querySelector('#type > option').value);
+    list(localStorage.type || document.querySelector('#type > option').id);
 };
