@@ -1,6 +1,7 @@
 'use strict';
 
 const filter = (title, prev) => {
+    localStorage.type = title;
     document.querySelectorAll(`.${title}`).forEach(x => {
         x.removeAttribute('style');
     });
