@@ -15,7 +15,7 @@ const list = () => {
 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
-                temp += `<tr class="${title.id}" style="display:none;">`;
+                temp += `<tr class="${title.id}" style="display: none;">`;
                 for (let j in data[i].c) {
                     if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                         temp += '<td>' + `<iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
@@ -31,7 +31,7 @@ const list = () => {
 },
     filter = (title, prev) => {
         document.querySelectorAll(`.${title}`).forEach(x => {
-            x.style.display = 'unset';
+            x.removeAttribute('style');
         });
         if (prev) document.querySelectorAll(`.${prev}`).forEach(x => {
             x.style.display = 'none';
