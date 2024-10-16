@@ -43,16 +43,13 @@ th, td {
 
 td > a {
     background: linear-gradient(135deg,
-    #405DE6 10%,
-    #5B51D8 20%,
-    #833AB4 30%,
-    #C13584 40%,
-    #E1306C 50%,
-    #FD1D1D 60%,
-    #F56040 70%,
-    #777737 80%,
-    #FCAF45 90%,
-    #FFDC80 100%
+    #405DE6 14%,
+    #5B51D8 28%,
+    #833AB4 42%,
+    #C13584 58%,
+    #E1306C 72%,
+    #FD1D1D 86%,
+    #F56040 100%,
     );
     background-size: 400% 400%;
     animation: gradient 5s ease-in-out infinite;
