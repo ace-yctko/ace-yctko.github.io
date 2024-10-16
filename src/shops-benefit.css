@@ -41,7 +41,7 @@ th, td {
     font-size: 15px;
 }
 
-td > a {
+td > span {
     background: linear-gradient(135deg,
     #405DE6 14%,
     #5B51D8 28%,
