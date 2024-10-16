@@ -13,9 +13,8 @@ const filter = (title, prev) => {
 window.onload = () => {
     const id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
         range = 'A3:H';
-    let type = localStorage.type || document.querySelector('#type > option').id,
-        temp = '';
-    
+    let type = localStorage.type || document.querySelector('#type > option').id;
+
     document.querySelectorAll('#type > option').forEach(title => {
         title.innerHTML = title.id;
         title.value = title.id;
@@ -24,7 +23,8 @@ window.onload = () => {
         fetch('https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range)
         .then(res => res.text())
         .then(rep => {
-            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows;
+            let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
+                temp = '';
                 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
@@ -38,7 +38,7 @@ window.onload = () => {
                 };
                 temp += '</tr>';
             };
+            document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
         });
     });
-    document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
 };
