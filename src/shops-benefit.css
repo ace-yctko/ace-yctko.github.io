@@ -42,6 +42,7 @@ th, td {
 }
 
 td > a {
+    display: block;
     background: linear-gradient(135deg,
     #405DE6 14%,
     #5B51D8 28%,
