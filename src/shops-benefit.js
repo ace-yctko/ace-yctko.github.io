@@ -21,7 +21,7 @@ window.onload = () => {
         title.value = title.id;
         titles.push(title.id);
     });
-
+    
     [titles[titles.indexOf(type)], titles[0]] = [titles[0], titles[titles.indexOf(type)]];
     
     titles.forEach(id => {
