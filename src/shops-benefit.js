@@ -23,6 +23,8 @@ window.onload = () => {
     });
     
     [titles[titles.indexOf(type)], titles[0]] = [titles[0], titles[titles.indexOf(type)]];
+
+    console.log(titles)
     
     titles.forEach(id => {
         fetch('https://docs.google.com/spreadsheets/d/1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E/gviz/tq?sheet=' + id + '&range=A3:H')
