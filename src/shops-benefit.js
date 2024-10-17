@@ -11,16 +11,19 @@ const filter = (title, prev) => {
 };
 
 window.onload = () => {
-    const id = '1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E',
-        range = 'A3:H';
-    let type = localStorage.type || document.querySelector('#type > option').id;
+    let type = localStorage.type || document.querySelector('#type > option').id,
+        titles = new Array();
+    
+    document.querySelector(`#${type}`).selected = true;
 
     document.querySelectorAll('#type > option').forEach(title => {
         title.innerHTML = title.id;
         title.value = title.id;
-        document.querySelector(`#${type}`).selected = true;
+        titles.push(title.id);
+    });
 
-        fetch('https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet=' + title.id + '&range=' + range)
+    titles.forEach(id => {
+        fetch('https://docs.google.com/spreadsheets/d/1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E/gviz/tq?sheet=' + id + '&range=A3:H')
         .then(res => res.text())
         .then(rep => {
             let data = JSON.parse(rep.substr(47).slice(0, -2)).table.rows,
@@ -28,7 +31,7 @@ window.onload = () => {
                 
             for (let i in data) {
                 if (data[i].c[0].v == '❌') continue;
-                temp += `<tr class="${title.id}"${type == title.id ? '' : ' style="display: none;"'}>`;
+                temp += `<tr class="${id}"${type == id ? '' : ' style="display: none;"'}>`;
                 for (let j in data[i].c) {
                     if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                         temp += '<td>' + `<span onclick="window.open('https://instagram.com/${data[i].c[j]?.v}');">@${data[i].c[j]?.v}</span><br><br><iframe src="https://www.instagram.com/${data[i].c[j]?.v}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
