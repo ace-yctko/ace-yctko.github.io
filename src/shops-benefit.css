@@ -14,14 +14,14 @@ select {
 }
 
 pre {
-    width: 85vw;
+    max-width: 85vw;
+    border: 1px solid grey;
     overflow: auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 table {
     border-collapse: collapse;
-    margin: 30px auto;
 }
 
 th, td {
