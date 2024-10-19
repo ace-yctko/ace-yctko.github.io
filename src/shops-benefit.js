@@ -1,6 +1,7 @@
 'use strict';
 
 const list = title => {
+    localStorage.type = title;
     fetch('https://docs.google.com/spreadsheets/d/1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E/gviz/tq?sheet=' + title + '&range=A3:H')
     .then(res => res.text())
     .then(rep => {
