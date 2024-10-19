@@ -14,14 +14,14 @@
 }
 
 .shops-container {
-    max-width: 90vw;
-    overflow-wrap: break-word;
     margin: 30px auto;
 }
 
 table {
     border-collapse: collapse;
     position: relative;
+    max-width: 90vw;
+    overflow-wrap: break-word;
 }
 
 th {
