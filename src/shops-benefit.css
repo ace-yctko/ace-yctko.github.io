@@ -23,17 +23,17 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    position: sticky;
+}
+
 th, td {
     border-bottom: 1px solid grey;
-    text-align: left;
+    text-align: center;
     vertical-align: middle;
     padding: 10px;
     font-size: 15px;
-}
-
-th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    margin: 0 5px;
 }
 
 .map {
