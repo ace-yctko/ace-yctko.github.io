@@ -32,10 +32,6 @@
     margin: 0 5px;
 }
 
-.shops-container > td {
-    display: block;
-}
-
 .map {
     width: 90vw;
     height: 60vh;
