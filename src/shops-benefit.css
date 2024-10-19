@@ -15,7 +15,7 @@ select {
 
 pre {
     max-width: 90vw;
-    overflow: auto;
+    overflow: visible;
     margin: 30px auto;
 }
 
