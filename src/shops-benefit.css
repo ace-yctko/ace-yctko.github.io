@@ -21,6 +21,11 @@
 
 table {
     border-collapse: collapse;
+    position: relative;
+}
+
+th {
+    position: sticky;
 }
 
 th, td {
