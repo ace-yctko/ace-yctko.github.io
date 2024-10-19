@@ -27,6 +27,7 @@
 .shops-container > th {
     position: sticky;
     top: 0;
+    margin: 0;
 }
 
 .shops-container > th, td {
