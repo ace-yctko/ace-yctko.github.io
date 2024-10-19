@@ -19,15 +19,16 @@ pre {
     margin: 30px auto;
 }
 
-table {
+pre > table {
     border-collapse: collapse;
+    position: relative;
 }
 
-th {
+pre > th {
     position: sticky;
 }
 
-th, td {
+pre > th, td {
     border-bottom: 1px solid grey;
     text-align: center;
     vertical-align: middle;
