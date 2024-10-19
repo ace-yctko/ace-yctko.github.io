@@ -31,6 +31,7 @@ table {
     width: 85vw;
     border-collapse: collapse;
     margin: 0 auto;
+    transition: all ease 0.2s;
 }
 
 th, td {
