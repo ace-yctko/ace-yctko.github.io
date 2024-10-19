@@ -32,6 +32,7 @@ const list = title => {
     if (prev) document.querySelectorAll(`.${prev}`).forEach(x => {
         x.style.display = 'none';
     });
+    localStorage.type = title;
 };
 
 window.onload = () => {
