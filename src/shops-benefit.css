@@ -23,9 +23,7 @@
     border-collapse: collapse;
 }
 
-.shops-container > table > th,
-.shops-container > table > td
-{
+th, td {
     border-bottom: 1px solid grey;
     text-align: center;
     vertical-align: middle;
