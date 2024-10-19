@@ -24,11 +24,16 @@ table {
 }
 
 th, td {
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
     text-align: left;
     vertical-align: middle;
     padding: 10px;
     font-size: 15px;
+}
+
+th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
 .map {
