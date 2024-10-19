@@ -1,7 +1,6 @@
 'use strict';
 
 const list = title => {
-    localStorage.type = title;
     fetch('https://docs.google.com/spreadsheets/d/1gTkcU8G4240QNNcMdFWTwr4JKBBd1Qdjwpu8nE8gY7E/gviz/tq?sheet=' + title + '&range=A3:H')
     .then(res => res.text())
     .then(rep => {
@@ -36,14 +35,14 @@ const list = title => {
 };
 
 window.onload = () => {
-    let type = localStorage.type || document.querySelector('#type > option').id;
+    if (! localStorage.type) localStorage.type = document.querySelector('#type > option').id;
     
-    document.querySelector(`#${type}`).selected = true;
+    document.querySelector(`#${localStorage.type}`).selected = true;
 
     document.querySelectorAll('#type > option').forEach(title => {
         title.innerHTML = title.id;
         title.value = title.id;
     });
 
-    list(type);
+    list(localStorage.type);
 };
