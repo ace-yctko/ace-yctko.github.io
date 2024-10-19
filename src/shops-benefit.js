@@ -22,8 +22,6 @@ const list = title => {
         document.querySelector('.shops').innerHTML = document.querySelector('.shops').innerHTML + temp;
     });
 }, filter = (title, prev) => {
-    localStorage.type = title;
-
     if (document.querySelector(`.${title}`) == null) {
         list(title);
     } else {
@@ -34,6 +32,7 @@ const list = title => {
     if (prev) document.querySelectorAll(`.${prev}`).forEach(x => {
         x.style.display = 'none';
     });
+    localStorage.type = title;
 };
 
 window.onload = () => {
