@@ -21,6 +21,7 @@ pre {
 
 table {
     border-collapse: collapse;
+    position: relative;
 }
 
 th {
