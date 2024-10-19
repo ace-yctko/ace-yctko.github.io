@@ -15,18 +15,12 @@
 
 .shops-container {
     max-width: 90vw;
-    overflow: visible;
+    overflow: auto;
     margin: 30px auto;
 }
 
 .shops-container > table {
     border-collapse: collapse;
-    position: relative;
-}
-
-.shops-container > th {
-    position: sticky;
-    left: 0;
 }
 
 .shops-container > th, td {
@@ -36,6 +30,10 @@
     padding: 10px;
     font-size: 15px;
     margin: 0 5px;
+}
+
+.shops-container > td {
+    display: block;
 }
 
 .map {
