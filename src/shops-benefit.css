@@ -31,7 +31,6 @@ table {
     width: 85vw;
     border-collapse: collapse;
     margin: 0 auto;
-    transition: all ease 0.2s;
 }
 
 th, td {
@@ -40,27 +39,4 @@ th, td {
     vertical-align: middle;
     padding: 10px;
     font-size: 15px;
-}
-
-td > span {
-    background: linear-gradient(135deg,
-    #405DE6 14%,
-    #5B51D8 28%,
-    #833AB4 42%,
-    #C13584 58%,
-    #E1306C 72%,
-    #FD1D1D 86%,
-    #F56040 100%
-    );
-    background-size: 400% 400%;
-    animation: gradient 5s ease-in-out infinite;
-    background-clip: text;
-    -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -o-background-clip: text;
-    -o-text-fill-color: transparent;
 }
