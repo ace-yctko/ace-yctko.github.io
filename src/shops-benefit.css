@@ -14,12 +14,12 @@ select {
 }
 
 pre {
+    width: 85vw;
     overflow: auto;
     margin-bottom: 30px;
 }
 
 table {
-    width: 85vw;
     border-collapse: collapse;
     margin: 30px auto;
 }
