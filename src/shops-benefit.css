@@ -15,10 +15,10 @@ select {
 
 pre {
     max-width: 85vw;
-    height: auto;
     border: 1px solid grey;
     overflow: auto;
     margin: 30px auto;
+    padding: 0;
 }
 
 table {
