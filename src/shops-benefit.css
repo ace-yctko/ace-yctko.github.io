@@ -26,8 +26,9 @@ table {
 th {
     background: white;
     color: #0e0e0e;
-    position: sticky;
+    border: 1px solid grey;
     top: 0;
+    position: sticky;
 }
 
 th, td {
