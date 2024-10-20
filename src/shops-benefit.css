@@ -16,7 +16,7 @@
 .shops-container {
     width: 90%;
     height: 90vh;
-    margin: 30px;
+    margin: auto 30px;
     overflow: auto;
 }
 
