@@ -14,7 +14,7 @@
 }
 
 .shops-container {
-    width: 90%;
+    width: 85%;
     height: 90vh;
     overflow: auto;
     margin: 0 auto;
@@ -24,8 +24,6 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     position: relative;
-    width: 90%;
-    height: 70%;
 }
 
 th {
@@ -52,6 +50,6 @@ hr {
 }
 
 .map {
-    width: 90%;
+    width: 85%;
     height: 60vh;
 }
