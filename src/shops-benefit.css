@@ -1,5 +1,10 @@
+.container {
+    margin: 30px auto;
+    text-align: center;
+}
+
 #type {
-    font-size: 35px;
+    font-size: 50px;
     padding: 3px;
     border: none;
     background: #0e0e0e;
@@ -10,7 +15,6 @@
 
 .shops-container {
     margin: 30px auto;
-    text-align: center;
 }
 
 table {
