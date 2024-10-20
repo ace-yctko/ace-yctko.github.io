@@ -15,10 +15,10 @@
 
 .shops-container {
     width: 100%;
-    height: 500px;
+    height: 50vh;
     margin: 30px auto;
     overflow: auto;
-    position: absolute;
+    position: relative;
 }
 
 table {
@@ -56,5 +56,5 @@ hr {
 
 .map {
     width: 90%;
-    height: 60vh;
+    height: 50vh;
 }
