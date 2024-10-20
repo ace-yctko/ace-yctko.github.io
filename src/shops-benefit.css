@@ -17,6 +17,7 @@
     width: 90%;
     height: 90vh;
     overflow: auto;
+    margin: 0 auto;
 }
 
 table {
