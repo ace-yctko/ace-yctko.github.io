@@ -21,10 +21,11 @@ table {
     border-collapse: collapse;
     position: relative;
     max-width: 90vw;
-    overflow-wrap: break-word;
 }
 
 th {
+    background: white;
+    color: #0e0e0e;
     position: sticky;
     top: 0;
 }
