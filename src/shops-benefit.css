@@ -14,7 +14,7 @@
 }
 
 .shops-container {
-    width: 100%;
+    width: 90%;
     height: 90vh;
     margin: 30px;
     overflow: auto;
@@ -27,6 +27,7 @@ table {
     width: 90%;
     height: 80%;
     margin: auto 30px;
+    overflow: hidden;
 }
 
 th {
