@@ -27,6 +27,10 @@ th {
     position: sticky;
 }
 
+td:nth-child(even) {
+  background-color: #dddddd;
+}
+
 th, td {
     border-bottom: 1px solid grey;
     vertical-align: middle;
