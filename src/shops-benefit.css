@@ -1,5 +1,5 @@
 .container {
-    margin: 30px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -16,7 +16,6 @@
 .shops-container {
     width: 90%;
     height: 90vh;
-    margin: 30px auto;
     overflow: auto;
 }
 
@@ -45,7 +44,6 @@ th, td {
     vertical-align: middle;
     padding: 10px;
     font-size: 15px;
-    margin: auto 5px;
 }
 
 hr {
