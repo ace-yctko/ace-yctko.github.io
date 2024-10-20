@@ -21,7 +21,7 @@ table {
     border-spacing: 0;
     position: relative;
     width: 90%;
-    height: 85%;
+    height: 80%
 }
 
 th {
@@ -42,4 +42,8 @@ th, td {
     padding: 10px;
     font-size: 15px;
     margin: 0 5px;
+}
+
+.map {
+    width: 90%;
 }
