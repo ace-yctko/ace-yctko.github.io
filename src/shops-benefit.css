@@ -25,6 +25,7 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     position: relative;
+    margin: 0 auto;
 }
 
 th {
