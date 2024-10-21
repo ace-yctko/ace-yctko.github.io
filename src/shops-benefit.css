@@ -11,14 +11,14 @@
     color: white;
     text-decoration: underline grey solid 2px;
     outline: none;
-    margin: 20px;
+    margin: 30px;
 }
 
 .shops-container {
     width: 85%;
     height: 90vh;
     overflow: auto;
-    margin: 30px auto;
+    margin: 20px auto 30px;
 }
 
 table {
