@@ -11,14 +11,14 @@
     color: white;
     text-decoration: underline grey solid 2px;
     outline: none;
-    margin: 30px;
+    margin: 30px auto;
 }
 
 .shops-container {
     width: 85%;
     height: 90vh;
     overflow: auto;
-    margin: 20px auto 30px;
+    margin: 0 auto 30px;
 }
 
 table {
@@ -49,5 +49,5 @@ th, td {
 .map {
     width: 85%;
     height: 60vh;
-    margin: 30px 0;
+    margin: 30px auto;
 }
