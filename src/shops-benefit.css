@@ -17,7 +17,7 @@
     width: 85%;
     height: 90vh;
     overflow: auto;
-    margin: 20px auto 0;
+    margin: 20px auto 30px;
 }
 
 table {
@@ -45,11 +45,8 @@ th, td {
     font-size: 15px;
 }
 
-hr {
-    margin: 50px 0;
-}
-
 .map {
     width: 85%;
     height: 60vh;
+    margin: 30px 0;
 }
