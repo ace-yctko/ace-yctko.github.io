@@ -11,13 +11,14 @@
     color: white;
     text-decoration: underline grey solid 2px;
     outline: none;
+    margin: 20px 0;
 }
 
 .shops-container {
     width: 85%;
     height: 90vh;
     overflow: auto;
-    margin: 20px auto 30px;
+    margin-bottom: 30px;
 }
 
 table {
@@ -35,7 +36,7 @@ th {
 }
 
 td:nth-child(even) {
-  background-color: #202020;
+    background-color: #202020;
 }
 
 th, td {
