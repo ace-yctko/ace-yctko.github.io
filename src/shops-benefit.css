@@ -19,13 +19,13 @@
     height: 90vh;
     overflow: auto;
     margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 table {
     border-collapse: separate;
     border-spacing: 0;
     position: relative;
-    margin: 0 auto;
 }
 
 th {
