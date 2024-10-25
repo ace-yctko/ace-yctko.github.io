@@ -36,6 +36,8 @@ const list = title => {
 };
 
 window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('type')) localStorage.type = params.get('type');
     if (! localStorage.type) localStorage.type = document.querySelector('#type > option').id;
     
     document.querySelector(`#${localStorage.type}`).selected = true;
