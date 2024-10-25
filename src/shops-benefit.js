@@ -39,7 +39,7 @@ window.onload = () => {
     const params = new URLSearchParams(location.search);
     if (params.get('type')) {
         localStorage.type = params.get('type');
-        location.replace(location.href.split("?")[0]);
+        location.replace(location.href.split('?')[0]);
     };
     if (! localStorage.type) localStorage.type = document.querySelector('#type > option').id;
     
