@@ -12,10 +12,12 @@ const list = title => {
             temp += `<tr class="${title}">`;
             for (let j in data[i].c) {
                 if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
+                    temp += '<td>';
                     for (let l in (data[i].c[j]?.v).split(',')) {
                         if (l > 0) temp += '<br>';
-                        temp += '<td>' + `<iframe src="https://www.instagram.com/${(data[i].c[j]?.v).split(',')[l]}/embed" scrolling="no" frameborder="0"></iframe>` + '</td>';
+                        temp += `<iframe src="https://www.instagram.com/${(data[i].c[j]?.v).split(',')[l]}/embed" scrolling="no" frameborder="0"></iframe>`;
                     }
+                    temp += '</td>';
                 } else if (j == 2 || j > 4) {
                     temp += '<td>' + data[i].c[j]?.v || 'N/A' + '</td>';
                 };
