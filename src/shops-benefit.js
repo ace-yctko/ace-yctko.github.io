@@ -14,9 +14,8 @@ const list = title => {
                 if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                     temp += '<td>';
                     for (let l in (data[i].c[j]?.v).split('\n')) {
-                        console.log((data[i].c[j]?.v).split('\n'));
                         if (l > 0) temp += '<br>';
-                        temp += `<iframe src="https://www.instagram.com/${(data[i].c[j]?.v).split(',')[l]}/embed" scrolling="no" frameborder="0"></iframe>`;
+                        temp += `<iframe src="https://www.instagram.com/${(data[i].c[j]?.v).split('\n')[l]}/embed" scrolling="no" frameborder="0"></iframe>`;
                     }
                     temp += '</td>';
                 } else if (j == 2 || j > 4) {
