@@ -13,7 +13,7 @@ const list = title => {
             for (let j in data[i].c) {
                 if (j == 2 && (data[i].c[3].v).indexOf('IG') != -1) {
                     temp += '<td>';
-                    for (let l in (data[i].c[j]?.v).split(',')) {
+                    for (let l in (data[i].c[j]?.v).split('\n')) {
                         if (l > 0) temp += '<br>';
                         temp += `<iframe src="https://www.instagram.com/${(data[i].c[j]?.v).split(',')[l]}/embed" scrolling="no" frameborder="0"></iframe>`;
                     }
